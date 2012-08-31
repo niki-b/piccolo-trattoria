@@ -1,0 +1,196 @@
+#intro, .container, footer, #menu {
+	width: 940px;
+	margin: 0 auto;
+	clear: both;
+	margin-bottom: 40px;
+	padding: 10px;
+
+}
+
+header {
+	height: 133px;
+	background-image: url('../images/desktop-strip.png');
+}
+
+header hgroup {
+	background-image: url('../images/desktop-piccolo.png');
+	width: 401px;
+	height: 133px;
+}
+
+footer {
+	padding-bottom: 40px;
+	overflow: auto;
+}
+
+#intro >div {
+	width: 620px;
+	float: left;
+	margin-top: 1em;
+}
+
+#review {
+	float: right;
+	margin: 10px;
+	padding: 10px;
+}
+
+#buttons{
+	display: block !important;
+}
+
+.container  img {
+	float: left;
+	margin: 5px 5px 30px 5px; 
+}
+
+.foot {
+	width: 33.33%;
+	float: left;
+}
+
+#visit {
+	text-align: left;
+}
+
+#street {
+	text-align: right;
+}
+.no-js #note{
+	position: static;
+}
+#note {
+	overflow: auto;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 1em;
+}
+
+#note p {
+	margin-top: 10px;
+	
+}
+#veggie {
+	float: left;
+	width: 150px;
+}
+#please {
+	width: 600px;
+	float: left;
+	text-align: center;
+}
+
+#byo {
+	width: 150px;
+	float: right;
+}
+
+#menuNav{
+	display: block;
+}
+
+#menuNav ul{
+	overflow: auto;
+	margin-top: 1em auto;
+	font-size: 1em;
+}
+
+#menuNav li{
+	display: block;
+	float: left;
+	margin-right: 1em;
+}
+
+#menuNav a{
+	text-decoration: none;
+	color: black;
+	padding: 0.5em;
+	display: block;
+	cursor: pointer;
+}
+
+#menuCont{
+	padding: 10px;
+	margin: 0;
+	overflow: auto;
+	height: 450px;
+}
+
+.js .menuContent{
+	width: 500px;
+	margin-left: 1.5em;
+	height: 350px;
+	overflow: auto;
+}
+
+.js .menuContent {
+	display: none;
+	margin-top: 1em;
+}
+
+.js .menuContent h5{
+	display: none;
+}
+#twoOptions{
+	text-align: right;
+	margin-right: 0;
+}
+
+#menuNav li .active{
+	color: white;
+	background-color: #5c0507;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#map{
+	height: 300px;
+	background-color: black
+	width: 940px;
+	margin-bottom: 0;
+}
+
+.no-js .menuContent{
+	width:800px;
+	margin: 0 auto 1em;
+	overflow: auto;
+}
+
+.no-js .menuContent:first{
+	margin-top: 20px;
+}
+
+.no-js .menuContent:last{
+	margin-bottom: 20px;
+}
+
+.top{
+	display:none;
+}
+
+.js .slide_nav {
+	text-align: center;
+   height: 20px;
+   display: block;
+}
+.js .slide_nav a    {
+    display:inline-block;
+    position:relative;
+    background: #86080b;
+    width: 12px;
+    height: 12px;
+    text-indent: -9999px;
+    margin: 0 2px;
+    cursor: pointer;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	outline: hidden;
+   }
+
+.js .slide_nav a:hover,
+.js .slide_nav .activeSlide {
+	background: #066206;
+	outline: none;
+}

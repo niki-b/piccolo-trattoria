@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: Georgia, 'Times New Roman', sans-serif;
+	
+	background: @red; /* Old browsers */
+	background: -moz-linear-gradient(top,  #86080b 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#86080b), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #86080b 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #86080b 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #86080b 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #86080b 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86080b', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* main styles begin */
+
+@white: white;
+@dark-red: #5c0507;
+@red: #86080b;
+@black: #242323;
+@green: #066206;
+
+header {
+	color: @white;
+	margin-top: 1.5em;
+	background-color: @dark-red;
+	
+	height: 113px;
+	background-image: url('../images/mobile-strip.png');
+	background-repeat: repeat-x;
+	background-position: top left;
+	
+	hgroup {
+		background-image: url('../images/piccolo-mobile.png');
+		width: 320px;
+		height: 113px;
+		text-indent: -999em;
+		margin: 0 auto;
+	}
+}
+
+h1{
+	font-size: 2.5em;
+}
+
+h2{
+	font-size: 0.7em;
+}
+
+h3{
+	font-size: 1.4em;
+}
+
+h5{
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+#intro {
+	margin: 1em;
+	color: @white;
+	h3{
+		margin-bottom: 10px;
+	}
+	
+	strong{
+		font-weight:bold;
+		font-size:1.2em;
+	}
+	
+	#review {
+		width: 276px;
+		height: 266px;
+		background-image: url('../images/speech.png');
+		background-repeat: no-repeat;
+		margin: 0 auto;
+		padding: 0.8em;
+		color: #2e2d2d;
+		font-size: 0.9em;
+		margin-top: 1em;
+		#reviewContainers {
+			min-height: 170px;
+		
+			p{
+				margin-bottom: 0.4em;
+				line-height:1.2;
+			}
+			p:last{
+				margin-bottom:0;
+			}
+		}
+	
+		aside {
+			text-align: right;
+			font-size: 0.8em;
+		}
+		/*
+		#buttons{
+			display: none;
+			margin: 0;
+			#next{
+				float: right;
+			}
+		}*/
+		
+		p{
+			width: 260px;
+			margin-left: 0.4em
+		}
+		
+		
+		div{	
+			margin-top: 0.2em;
+			height: 185px;
+		}
+	}
+}
+
+#menuStrip{
+	background-image:  url('../images/menu-strip.png');
+	background-repeat: repeat-x;
+	height: 67px;
+	clear: both;
+	
+	#menuTitle{
+		background-image: url('../images/heading-menu.png');
+		background-repeat: no-repeat;
+		margin: 0 auto;
+		height: 67px;
+		width: 320px;
+		text-indent: -999em;
+		
+	}
+}
+
+#menuNav{
+	display:none;
+}
+
+#menuCont{
+	background-color: white;
+	overflow: auto;
+	padding: 1em;
+	margin: 1em;
+	position: relative;
+	sup{
+		text-decoration: underline;
+	}
+	.border-radius(3px);
+}
+
+.menuContent{
+	margin-bottom: 2em;
+	display: block;
+	p{
+		margin-bottom: 1.1em;
+	}
+}
+
+.veg {
+	text-indent: -999em;
+	background-image: url('../images/vegetarian.png');
+	height: 16px;
+	width: 16px;
+	background-repeat: no-repeat;
+	background-position: top left;
+	display: inline-block;
+}
+
+.menuContainer{
+	overflow: auto;
+}
+
+.price {
+	float: right;
+}
+
+.title, .price{
+	font-weight: 550;
+}
+
+.descrip {
+	font-size: 0.8em;
+	font-style: italic;
+	max-width: 80%;
+	display: block;
+}
+
+#twoOptions{
+	text-align: center;
+	display: block;
+	margin: 0.5em;
+}
+
+#note {
+	border-top: 1px solid black; 
+	font-style: italic;
+	margin-top: 1em;
+	p {
+		margin: 0.5em 0;
+		text-align: center;
+	}
+}
+
+#photo-strip{
+	background-image: url('../images/photos-strip.png');
+	background-repeat: repeat-x;
+	height: 67px;
+	#photos {
+		background-image: url('../images/heading-photos.png');
+		background-repeat: no-repeat;
+		margin: 0 auto;
+		height: 67px;
+		width: 320px;
+		text-indent: -999em;
+	}
+}
+
+footer, header, h4{
+	text-align: center;
+}
+
+.photo {
+	display: block;
+	margin: 1em auto;
+}
+
+footer {
+	color: @white;
+	border-top: 1px solid @red;
+	margin-top: 20px;
+	p{
+		margin-top: 0.5em;
+		a{
+			color: @green;
+			text-decoration: none;
+		}
+	}
+	.foot {
+		margin-bottom: 1em;
+	}
+	
+}
+
+.box-shadow(@x, @y, @blur, @colour) {
+	box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-webkit-box-shadow: @arguments;
+}
+
+.border-radius(@radius){
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+}
+
+.no-js {
+	#menuNav{
+		display:none;
+	}
+	
+	#menuCont{
+		height: auto;
+	}
+	
+	#reviewContainers > div{
+		display: none;
+	}
+	
+	#first-review{
+		display: block !important;
+	}
+	
+}
+
+h5{
+	background-color: @dark-red;
+	.border-radius(3px);
+	color: white;
+	padding: 0.5em;
+}
+
+.top{
+	display:block;
+	text-align:right;
+	font-size: 0.8em;
+	color:green;
+	text-decoration: none;
+}
+
+.slide_nav {
+	display:none;
+}	
+
+#map {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.gap-top{
+	margin-top:10px;
+}
