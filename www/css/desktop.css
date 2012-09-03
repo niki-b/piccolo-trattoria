@@ -119,7 +119,7 @@ footer {
 .js .menuContent{
 	width: 500px;
 	margin-left: 1.5em;
-	height: 350px;
+	height: 365px;
 	overflow: auto;
 }
 
@@ -194,3 +194,4 @@ footer {
 	background: #066206;
 	outline: none;
 }
+
