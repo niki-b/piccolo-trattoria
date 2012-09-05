@@ -86,7 +86,9 @@ $mobile = $detector -> isMobile();
 	<section id="intro">
 		<div>
 			<h3>Great food and cosy ambience in the heart of Wellington City</h3>
-			<p>Piccolo trattoria is the ideal place to enjoy a traditional Italian meal with top service and some fun. Located at <strong>103 Vivian Street</strong>, Wellington CBD- Piccolo is Wellington's best-kept secret that everyone's talking about! Phone <strong>04 382 8882</strong> to make a booking.</p>
+			<p>Piccolo trattoria is the ideal place to enjoy a traditional Italian meal with top service and some fun.</p>
+			<p>Located at <strong>103 Vivian Street</strong>, Wellington CBD &ndash; Piccolo is Wellington's best-kept secret that everyone's talking about!</p>
+			<p>Phone <strong>04 382 8882</strong> to make a booking. Group bookings welcome!</p>
 		</div>
 		
 		<article id="review">	

@@ -185,7 +185,10 @@ h5 {
   color: #ffffff;
 }
 #intro h3 {
-  margin-bottom: 10px;
+  margin-bottom: 1.6em;
+}
+#intro p {
+  margin-bottom: 1em;
 }
 #intro strong {
   font-weight: bold;
@@ -232,6 +235,9 @@ h5 {
 #intro #review div {
   margin-top: 0.2em;
   height: 185px;
+}
+#map {
+  border: 1px solid white;
 }
 #menuStrip {
   background-image: url('../images/menu-strip.png');
